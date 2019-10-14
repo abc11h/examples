@@ -15,6 +15,7 @@ const wordpress = new k8s.helm.v2.Chart("wpdev", {
     repo: "stable",
     version: "2.1.3",
     chart: "wordpress",
+    namespace: "cucumber"
 });
 
 // Export the public IP for Wordpress.
